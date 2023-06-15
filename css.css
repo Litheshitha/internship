@@ -1,127 +1,420 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    grid-gap: 10px;
-  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pricing-container {
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.delivery-container {
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 46px; /* Move the containers 10 pixels up */
+
+}
+
+.coupon-container {
+  width: 0%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align containers to the bottom */
+  align-items: flex-end; /* Align containers to the right */
+  margin-right: 1.7in; /* Add half-inch margin to the right */
+}
+
+.pricing-container,
+.delivery-container,
+.coupon-container {
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Rest of the CSS code */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align containers to the bottom */
+  align-items: flex-end; /* Align containers to the right */
+  margin-right: 139px; /* Add half-inch margin to the right */
+}
+
+.pricing-container,
+.delivery-container,
+.coupon-container {
+  width: 30%; /* Decrease the width to 30% */
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+.delivery-address{
+   font-family: 'Laila', sans-serif;
+      font-size: 32px;
+      font-weight: bolder;
+      line-height: 42px;
+      letter-spacing: 0.04em;
+      text-align: left;
+}
+.name
+{
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0.04em;
+text-align: left;
+}
+.address,
+.estimated-section,
+.pricing-container{
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.coupons-link a {
+  color: black;
+}
+
+.pricing-container,
+.delivery-container,
+.coupon-container {
+  width: 30%; 
+  background-color: #FFF5EA; /* Set background color to #FFF5EA */
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  top: 630px;
+
+}
+.coupon-code p {
   
-  .left-column {
-    display: flex;
-    flex-direction: column;
-    border-radius: 30%;
-    margin-right: 0;
-  }
+}
+.pay-now-button {
+  height: 50px;
+  width: 280px;
+  top: 680px;
+  border-radius: 8px;
+  position: absolute; /* Add this line */
+  right: 145px; /* Adjust the right value as per your requirement */
+  background-color:#DA7644;
+  color:white;
+  border:0;
+}
+.panel1 {
+  height: 204px;
+  width: 579px;
+  left: 250px;
+  top: 55px;
+  border-radius: 12px;
+  background-color: ffffff;
+  position: absolute;
+    border: 1px solid;
+}
+
+.panel2 {
+  height: 204px;
+  width: 579px;
+  left: 250px;
+  top: 288px;
+  border-radius: 12px;
+  background-color: ffffff;
+  position: absolute;
+    border: 1px solid;
+
+}
+.panel3 {
+  height: 204px;
+  width: 579px;
+  left: 250px;
+  top: 526px;
+  border-radius: 12px;
+  background-color: ffffff;
+  position: absolute;
+    border: 1px solid;
+
+}
+.panel-heading,
+.panel2-heading,
+.panel3-heading {
+  font-family: 'Laila', sans-serif;
+}
+.panel1 .rating {
+  position: absolute;
+  top: 50px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel1 .panel-heading {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel1 .pricing-container {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel1 .panel-price {
+  position: absolute;
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel1 .qty-container {
+  width: 100px;
+  position: absolute;
+  top: 125px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 20px; /* Adjust the font size as desired */
+  display: flex;
+  align-items: center;
+}
+
+.panel1 .qty-label {
+  font-size: 16px; /* Adjust the font size of the label as desired */
+  font-weight: bold; /* Add font weight to the label as desired */
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color to the label as desired */
+  margin-right: 10px; /* Add margin to create space between the label and dropdown */
+}
+
+.panel1 .qty-dropdown {
+  height: 40px; /* Adjust the height of the dropdown as desired */
+  padding: 0 10px; /* Adjust the padding of the dropdown as desired */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333333;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the dropdown as desired */
+  font-weight: bold; /* Add font weight to the dropdown as desired */
+  cursor: pointer;
+}
+
+.panel1 .delete-button {
+  height: 40px; /* Adjust the height of the delete button as desired */
+  padding: 0 10px; /* Adjust the padding of the delete button as desired */
+  border-radius: 5px;
+  background-color: #DA7644;
+  color: white;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the delete button as desired */
+  font-weight: bold; /* Add font weight to the delete button as desired */
+  cursor: pointer;
+  margin-left: 10px; /* Add margin to create space between the dropdown and delete button */
+}
+
+
+
+.panel2 .rating {
+  position: absolute;
+  top: 50px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel2 .panel2-heading {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel2 .pricing-container {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel2 .panel-price {
+  position: absolute;
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel2 .qty-container {
+  width: 100px;
+  position: absolute;
+  top: 125px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 20px; /* Adjust the font size as desired */
+  display: flex;
+  align-items: center;
+}
+
+.panel2 .qty-label {
+  font-size: 16px; /* Adjust the font size of the label as desired */
+  font-weight: bold; /* Add font weight to the label as desired */
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color to the label as desired */
+  margin-right: 10px; /* Add margin to create space between the label and dropdown */
+}
+
+.panel2 .qty-dropdown {
+  height: 40px; /* Adjust the height of the dropdown as desired */
+  padding: 0 10px; /* Adjust the padding of the dropdown as desired */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333333;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the dropdown as desired */
+  font-weight: bold; /* Add font weight to the dropdown as desired */
+  cursor: pointer;
+}
+
+.panel2 .delete-button {
+  height: 40px; /* Adjust the height of the delete button as desired */
+  padding: 0 10px; /* Adjust the padding of the delete button as desired */
+  border-radius: 5px;
+  background-color: #DA7644;
+  color: white;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the delete button as desired */
+  font-weight: bold; /* Add font weight to the delete button as desired */
+  cursor: pointer;
+  margin-left: 10px; /* Add margin to create space between the dropdown and delete button */
+}
+
+
+.panel3 .rating {
+  position: absolute;
+  top: 50px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel3 .panel3-heading {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel3 .pricing-container {
+  position: absolute;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel3 .panel-price {
+  position: absolute;
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+}
+.panel3 .qty-container {
+  width: 100px;
+  position: absolute;
+  top: 125px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 20px; /* Adjust the font size as desired */
+  display: flex;
+  align-items: center;
+}
+
+.panel3 .qty-label {
+  font-size: 16px; /* Adjust the font size of the label as desired */
+  font-weight: bold; /* Add font weight to the label as desired */
+  top: 85px; /* Adjust the top value to position the heading */
+  left: 225px;font-size: 20px; /* Adjust the font size as desired */
+  color: #333333; /* Add color to the label as desired */
+  margin-right: 10px; /* Add margin to create space between the label and dropdown */
+}
+
+.panel3 .qty-dropdown {
+  height: 40px; /* Adjust the height of the dropdown as desired */
+  padding: 0 10px; /* Adjust the padding of the dropdown as desired */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333333;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the dropdown as desired */
+  font-weight: bold; /* Add font weight to the dropdown as desired */
+  cursor: pointer;
+}
+
+.panel3 .delete-button {
+  height: 40px; /* Adjust the height of the delete button as desired */
+  padding: 0 10px; /* Adjust the padding of the delete button as desired */
+  border-radius: 5px;
+  background-color: #DA7644;
+  color: white;
+  border: none;
+  font-size: 16px; /* Adjust the font size of the delete button as desired */
+  font-weight: bold; /* Add font weight to the delete button as desired */
+  cursor: pointer;
+  margin-left: 10px; /* Add margin to create space between the dropdown and delete button */
+}
+
+
+.panel1 .rating,
+    .panel1 .panel-heading,
+    .panel1 .pricing-container,
+    .panel1 .panel-price,
+    .panel1 .qty-container,
+    .panel1 .qty-label,
+    .panel1 .qty-dropdown,
+    .panel1 .delete-button,
+    .panel2 .rating,
+    .panel2 .panel2-heading,
+    .panel2 .pricing-container,
+    .panel2 .panel-price,
+    .panel2 .qty-container,
+    .panel2 .qty-label,
+    .panel2 .qty-dropdown,
+    .panel2 .delete-button,
+    .panel3 .rating,
+    .panel3 .panel3-heading,
+    .panel3 .pricing-container,
+    .panel3 .panel-price,
+    .panel3 .qty-container,
+    .panel3 .qty-label,
+    .panel3 .qty-dropdown,
+    .panel3 .delete-button {
+      font-family: 'Quicksand', sans-serif;
+    }
+    .coupon-code p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+    }
   
-  .large-image {
-    height: 400px;
-    width: 400px;
-    background-color: #ccc;
-    border-radius: 20px;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-  
-  .small-images {
-    margin-top: 30px;
-  }
-  
-  .small-image {
-    width: calc(15% - 5px);
-    margin-left: 10%;
-    border-radius: 20px;
-  }
-  
-  .right-column {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8%;
-    width: 80%;
-  }
-  
-  .content-section {
-    background-color: #fff5ea;
-    padding: 20px;
-    border-radius: 20px;
-  }
-  
-  .ratings-section {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-  }
-  
-  .rating {
-    font-size: 24px;
-    color: gold;
-  }
-  
-  .price-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .discount {
-    font-size: 14px;
-    color: #999;
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    margin-left: 10px;
-  }
-  
-  .dimension-left {
-    width: 50%;
-    float: left;
-  }
-  .dimension-right {
-    width: 50%;
-    float: right;
-  }
-  .sku {
-    margin-top: 0;
-  }
-  .sku-left {
-    width: 50%;
-    float: left;
-  }
-  .sku-right {
-    width: 50%;
-    float: left;
-  }
-  .label {
-    font-weight: bold;
-  }
-  
-  .dimensions {
-    margin-left: 10px;
-  }
-  
-  .button-section {
-    margin-left: 47%;
-  }
-  
-  .buy-button,
-  .cart-button {
-    height: 64px;
-    width: 290px;
-    border-radius: 8px;
-    background-color: #d97642;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .cart-button {
-    margin-left: 10px;
-    padding: 18px 44px;
-    background-color: white;
-    border: 50px;
-    border-color: black;
-    color: black;
-  }
+    .coupon-code p:first-child {
+      font-family: 'Laila', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .coupon-code p:last-child {
+      font-family: 'Laila', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
